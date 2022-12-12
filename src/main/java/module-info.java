@@ -1,24 +1,24 @@
-module com.example.joinfive {
+module psl.dauphine.mpsl {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.joinfive to javafx.fxml;
-    exports com.example.joinfive;
-    exports com.example.joinfive.model;
-    opens com.example.joinfive.model to javafx.fxml;
-    exports com.example.joinfive.model.grid;
-    opens com.example.joinfive.model.grid to javafx.fxml;
-    exports com.example.joinfive.model.ai;
-    opens com.example.joinfive.model.ai to javafx.fxml;
-    exports com.example.joinfive.controller;
-    opens com.example.joinfive.controller to javafx.fxml;
-    exports com.example.joinfive.view;
-    opens com.example.joinfive.view to javafx.fxml;
-    exports com.example.joinfive.util;
-    opens com.example.joinfive.util to javafx.fxml;
-    exports com.example.joinfive.model.ai.nmcs;
-    opens com.example.joinfive.model.ai.nmcs to javafx.fxml;
-    exports com.example.joinfive.model.ai.nrpa;
-    opens com.example.joinfive.model.ai.nrpa to javafx.fxml;
+    opens psl.dauphine.mpsl to javafx.fxml;
+    exports psl.dauphine.mpsl;
+    exports psl.dauphine.mpsl.base;
+    opens psl.dauphine.mpsl.base to javafx.fxml;
+    exports psl.dauphine.mpsl.base.grid;
+    opens psl.dauphine.mpsl.base.grid to javafx.fxml;
+    exports psl.dauphine.mpsl.base.algorithms;
+    opens psl.dauphine.mpsl.base.algorithms to javafx.fxml;
+    exports psl.dauphine.mpsl.controller;
+    opens psl.dauphine.mpsl.controller to javafx.fxml;
+    exports psl.dauphine.mpsl.view;
+    opens psl.dauphine.mpsl.view to javafx.fxml;
+    exports psl.dauphine.mpsl.util;
+    opens psl.dauphine.mpsl.util to javafx.fxml;
+    exports psl.dauphine.mpsl.base.algorithms.nmcs;
+    opens psl.dauphine.mpsl.base.algorithms.nmcs to javafx.fxml;
+    exports psl.dauphine.mpsl.base.algorithms.nrpa;
+    opens psl.dauphine.mpsl.base.algorithms.nrpa to javafx.fxml;
 }
